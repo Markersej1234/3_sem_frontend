@@ -10,7 +10,10 @@ import facade from "./apiFacade.js";
 import Footer from "./components/Footer.jsx";
 import Coctails from "./components/Coctails.jsx";
 import SignUp from "./components/SignUp.jsx";
-import Dinnerevent from './components/Dinnerevent.jsx';
+import Dinnerevent from "./components/Dinnerevent.jsx";
+import CreateDinnerevent from './components/CreateDinerevent.jsx';
+
+
 
 function App() {
     //usestates her
@@ -33,7 +36,9 @@ function App() {
                     <Route path="/signUp" element={<SignUp/>}/>
                     <Route path="*" element={<h1 className="not-found">Page Not Found</h1>}/>
                     <Route path="/event" element={<Dinnerevent/>}/>
+                    <Route path="/createevent" element={<CreateDinnerevent/>}/>
 
+                
                 </Routes>
                 {/*<Alert variant="dark" style={{width: "42rem"}}>Status: {errorMessage}</Alert>*/}
                 <Footer />

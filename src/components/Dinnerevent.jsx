@@ -26,7 +26,7 @@ const Dinnerevent = () => {
           <div>
             <ul>
               <li>
-                Time: {dinnerevent.time}, Lacation: {dinnerevent.lacation},
+              Id {dinnerevent.id}, Time: {dinnerevent.time}, Lacation: {dinnerevent.lacation},
                 Dish: {dinnerevent.dish}, PricePerPerson: {dinnerevent.pricePerPerson}
               </li> 
             </ul>
