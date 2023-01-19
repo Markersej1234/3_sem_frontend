@@ -3,7 +3,7 @@ import React from 'react';
 function Footer(props) {
     return (
         <footer className="footer">
-            &copy;2022 | CA2 Project - Timea Ballok
+            &copy;2022 | 3 Semester eksamen 
         </footer>
     );
 }
