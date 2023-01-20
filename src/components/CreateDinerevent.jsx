@@ -2,13 +2,13 @@ import { useState } from "react";
 import facade from "../apiFacade";
 
 const CreateDinnerevent = () => {
-  const dinnereventInfo = { time: "", lacation: "", dish: "", pricePerPerson: "" };
+  const dinnereventInfo = { lacation: "", dish: "", pricePerPerson: "" };
   const [dinnerevent, setDinnerevent] = useState(dinnereventInfo);
 
   const createDinnerevent = (evt) => {
     evt.preventDefault();
     fetch(
-        "http://localhost:8080/CA2_war_exploded/api/event/create" ,
+        "http://localhost:8080/CA2_war_exploded/api/event/createevent" ,
         facade.makeOptions("POST", true,dinnerevent)
       )
         .then((response) => response.json())
